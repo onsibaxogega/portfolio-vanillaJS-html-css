@@ -1,2 +1,0 @@
-# portfolio-vanillaJS-html-css
- 
