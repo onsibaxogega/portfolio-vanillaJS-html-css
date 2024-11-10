@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     #desktop-nav {
         display: none;
     }
@@ -6,4 +6,9 @@
     #hamburger-nav {
         display: flex;
     }
+
+    .section-container {
+        flex-wrap: wrap;
+    }
+
 }
