@@ -103,7 +103,15 @@
  }
  
  .logo {
+     size: 3rem;
      font-size: 2rem;
+     display: flex;
+     overflow: hidden;
+ }
+
+ .navLogo {
+    size: 0rem;
+    background: red;
  }
  
  .logo:hover {
@@ -224,7 +232,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 35%;
-    background: var(--backgroundColor3);
+    background: var(--accentColor1);
     width: 4rem;
     height: 3.5rem;
  }
