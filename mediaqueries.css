@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
     #desktop-nav {
         display: none;
     }
@@ -7,8 +7,11 @@
         display: flex;
     }
 
-    .section-container {
-        flex-wrap: wrap;
+    .section-container, .section__text {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 }
