@@ -14,4 +14,13 @@
         align-items: center !important;
     }
 
+    .section__pic-container{
+        display: flex;
+        height: 25rem;
+        width: 25rem;
+        margin: auto 0;
+        justify-content: center;
+        overflow: hidden;
+    }
+
 }

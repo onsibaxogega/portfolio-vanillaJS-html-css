@@ -261,6 +261,7 @@
      width: 25rem;
      margin: auto 0;
      justify-content: center;
+     overflow: hidden;
  }
  
  .section__text {

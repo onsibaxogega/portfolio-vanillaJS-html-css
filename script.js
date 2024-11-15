@@ -7,9 +7,9 @@ function toggleMenu() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
-    const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const userPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
     document.documentElement.setAttribute(
         "data-theme",
-        savedTheme || (userPrefersDark ? "dark" : "light")
+        savedTheme || (userPrefersLight ? "light" : "dark")
     );
 });
