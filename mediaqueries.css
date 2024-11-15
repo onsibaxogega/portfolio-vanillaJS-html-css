@@ -1,3 +1,23 @@
+ @media (prefers-color-scheme: light) {
+    :root {
+        --areaColor1: #ffffff;
+        --backgroundColor1: #ffffff;
+        --backgroundColor2: #000000;
+        --backgroundColor3: #ffffff;
+        --buttonColor1: #ffffff;
+        --buttonColor2: #000000;
+        --textColor1: #000000;
+        --textColor2: #ffffff;
+        --textColor3:gray;
+        --borderColor1: #000000;
+        --borderColor2: #ffffff;
+        --borderColor3: #b5b5b5;
+        --decorationColor1:#b5b5b5;
+        --accentColor1: #003cff;
+     }
+ }
+
+
 @media screen and (max-width: 1300px) {
     #desktop-nav {
         display: none;
@@ -14,13 +34,33 @@
         align-items: center !important;
     }
 
+    .sections {
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
     .section__pic-container{
         display: flex;
-        height: 25rem;
-        width: 25rem;
+        height: 15rem;
+        width: 15rem;
         margin: auto 0;
         justify-content: center;
         overflow: hidden;
+    }
+
+    .arrow-container {
+        margin-top: 4rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: 90dvh;
+        width: 90dvw;
+        justify-content: center;
+    }
+
+    .about-container {
+        border-width: 0;
     }
 
 }

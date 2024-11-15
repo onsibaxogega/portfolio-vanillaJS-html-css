@@ -1,44 +1,27 @@
  /*General*/
  @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
-
- :root {
-    --areaColor1: #ffffff;
-    --backgroundColor1: #ffffff;
-    --backgroundColor2: #000000;
-    --backgroundColor3: #ffffff;
-    --buttonColor1: #ffffff;
-    --buttonColor2: #000000;
-    --textColor1: #000000;
-    --textColor2: #ffffff;
-    --textColor3:gray;
-    --borderColor1: #000000;
-    --borderColor2: #ffffff;
-    --decorationColor1:#b5b5b5;
-    --accentColor1: #003cff;
- }
-
- @media (prefers-color-scheme: dark) {
-    :root {
-        --areaColor1: #1b1b1b;
-        --backgroundColor1: #1b1b1b;
-        --backgroundColor2: #ffffff;
-        --backgroundColor3: #006eff;
-        --buttonColor1: #000000;
-        --buttonColor2: #ffffff;
-        --textColor1: #ffffff;
-        --textColor2: #000000;
-        --textColor3:#a5a5a5;
-        --borderColor1: #ffffff;
-        --borderColor2: #000000;
-        --decorationColor1:#b5b5b5;
-        --accentColor1: #006eff;
-     }
- }
-
  * {
    margin: 0rem;
    padding: 0rem;
+ }
+
+ :root {
+    --areaColor1: #1b1b1b;
+    --backgroundColor1: #1b1b1b;
+    --backgroundColor2: #ffffff;
+    --backgroundColor3: #006eff;
+    --buttonColor1: #000000;
+    --buttonColor2: #ffffff;
+    --textColor1: #ffffff;
+    --textColor2: #000000;
+    --textColor3:#a5a5a5;
+    --borderColor1: #ffffff;
+    --borderColor2: #000000;
+    --borderColor3: #b5b5b5;
+    --decorationColor1:#b5b5b5;
+    --accentColor1: #006eff;
+    --accentColor2: #0099ff;
  }
  
  html {
@@ -217,6 +200,12 @@
  }
  
  /*SECTIONS*/
+
+ .sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
  
  .section-container {
      padding-top: 7dvh;
@@ -343,4 +332,42 @@
      border: var(--borderColor1) 0.2rem solid;
      background: var(--backgroundColor2);
      color: var(--textColor2);
+ }
+
+ /* ABOUT ME */
+
+ .degree {
+    color: var(--accentColor2);
+ }
+
+ .section-header {
+    margin-bottom: 2rem;
+ }
+
+ .sub-section-title {
+    margin-bottom: 0rem;
+ }
+
+ .about-content {
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+ }
+
+ .about-container {
+    border: var(--borderColor3) 0.1rem solid;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+ .education-object {
+    border: var(--borderColor1) 0.1rem solid;
+    border-radius: 2rem 0rem;
+    padding: 2rem;
  }
