@@ -358,12 +358,17 @@
  }
 
  .about-container {
-    border: var(--borderColor3) 0.1rem solid;
+    border: var(--borderColor3) 0rem solid;
     border-radius: 0.5rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    h2 {
+        font-size: 2.5rem;
+        color: var(--accentColor1);
+    }
  }
 
  .education-object {
