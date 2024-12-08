@@ -22,6 +22,29 @@
     --decorationColor1:#b5b5b5;
     --accentColor1: #006eff;
     --accentColor2: #0099ff;
+    --arrowContainerColor: var(--accentColor1);
+    --themeSwitchCircleLeft:#000000;
+    --themeSwitchCircleRight:#ffffff;
+ }
+
+ :root.lightMode {
+    --areaColor1: #ffffff;
+    --backgroundColor1: #ffffff;
+    --backgroundColor2: #000000;
+    --backgroundColor3: #ffffff;
+    --buttonColor1: #ffffff;
+    --buttonColor2: #000000;
+    --textColor1: #000000;
+    --textColor2: #ffffff;
+    --textColor3:gray;
+    --borderColor1: #000000;
+    --borderColor2: #ffffff;
+    --borderColor3: #b5b5b5;
+    --decorationColor1:#b5b5b5;
+    --accentColor1: #003cff;
+    --arrowContainerColor: var(--areaColor1);
+    --themeSwitchCircleLeft:#000000;
+    --themeSwitchCircleRight:#ffffff;
  }
  
  html {
@@ -76,6 +99,42 @@
      list-style: none;
      font-size: 1.5rem;
  }
+
+ #themeSwitchContainer {
+    align-self: center;
+    align-content: center;
+    margin-left: 2rem;
+    display: flex;
+    font-size: 1rem;
+ }
+
+ #themeSwitch {
+    margin-inline: 0.5rem;
+    height: 1.4rem;
+    width: 2.5rem;
+    background: var(--buttonColor2);
+    border: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding-inline: 0.15rem;
+    justify-content: space-between;
+ }
+
+ .themeSwitchCircle {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 0.6rem;
+ }
+
+ #themeSwitchCircleLeft {
+    background: var(--themeSwitchCircleLeft)
+ }
+
+ #themeSwitchCircleRight {
+    background: var(--themeSwitchCircleRight);
+ }
  
  a{
      color: var(--textColor1);
@@ -100,6 +159,7 @@
 
  .navLogo {
     height: 4rem;
+    cursor: pointer;
  }
  
  .logo:hover {
@@ -224,8 +284,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: #1b1b1b 0.15rem solid;
     border-radius: 35%;
-    background: var(--accentColor1);
+    background: var(--arrowContainerColor);
     width: 4rem;
     height: 3.5rem;
  }
