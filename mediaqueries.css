@@ -7,6 +7,10 @@
         display: flex;
     }
 
+    #themeSwitchContainer {
+        margin-left: 0rem;
+    }
+
     .section-container, .section__text {
         display: flex;
         flex-direction: column !important;

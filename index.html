@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Onsiba's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="icon" href="./assets/onsiba-logo.ico" type="image/ico">
@@ -48,6 +48,14 @@
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
+            <span id="themeSwitchContainer">
+                <p>&#9789;</p>
+                <div id="themeSwitch" onclick="toggleTheme()">
+                    <div class="themeSwitchCircle" id="themeSwitchCircleLeft"></div>
+                    <div class="themeSwitchCircle" id="themeSwitchCircleRight"></div>
+                </div>
+                <p>&#9728;</p>
+            </span>
         </nav>
     </div>
     <div class="sections">
@@ -62,7 +70,7 @@
                 </h1>
                 <p class="section__text__p2">Software Engineer</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/oogega__resume_.pdf')">
                         Download Resume
                     </button>
                     <button class="btn btn-color-2" onclick="location.href='./#contact'">
@@ -104,10 +112,10 @@
                     <div class="about-container">
                         <h2 class="sub-section-title">Organizations</h2>
                         <div id="HKN" class="org-object">
-                            <h3>Eta Kappa Nu (IEEE - HKN)</h3>
+                            <h3>&#10022;    Eta Kappa Nu (IEEE - HKN)</h3>
                         </div>
                         <div id="CD" class="org-object">
-                            <h3>ASU CodeDevils</h3>
+                            <h3>&#10022;    ASU CodeDevils</h3>
                         </div>
                     </div>
                 </div>
@@ -124,7 +132,42 @@
                         <span>My </span><span class="accented">Skills</span>
                     </h1>
                 </div>
-                
+                <div class="scroller" data-direction="left" data-speed="fast">
+                    <div class="scroller__inner">
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/java.png" alt="Java logo">
+                            <p class="skillsLabel">Java</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/spring.png" alt="Spring logo">
+                            <p class="skillsLabel">Spring</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/html.png" alt="HTML logo">
+                            <p class="skillsLabel">HTML</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/css.png" alt="CSS logo">
+                            <p class="skillsLabel">CSS</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/bootstrap.png" alt="Bootstrap logo">
+                            <p class="skillsLabel">Bootstrap</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/javascript.png" alt="JavaScript logo">
+                            <p class="skillsLabel">JavaScript</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/react.png" alt="React logo">
+                            <p class="skillsLabel">React</p>
+                        </div>
+                        <div class="skillsCard">
+                            <img class="skillsImage" src="./assets/git.png" alt="Git logo">
+                            <p class="skillsLabel">Git</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -143,8 +186,9 @@
                     <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
                         onclick="location.href='https://www.linkedin.com/in/onsiba-ogega-84b462289'"><img/>
                     <img src="./assets/email.png" alt="My GitHub Profile" class="icon"
-                        onclick="location.href='https://github.com/onsibaxogega'" />
+                        onclick="location.href='mailto:onsibaxogega@gmail.com'" />
                 </div>
+                <p class="emailText">onsibaxogega@gmail.com</p>
             </div>
         </section>
     </div>
